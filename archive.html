@@ -1,0 +1,15 @@
+---
+layout: page
+title: Archive
+---
+
+<div class="home">
+        <ul class="page-list">
+            {% for post in site.posts %}
+                <li>
+                    <time class="postlist-meta">{{ post.date | date: '%B %d, %Y' }}</time>
+                    &mdash; <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %} 
+        </ul>
+</div>
