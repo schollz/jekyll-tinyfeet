@@ -44,7 +44,7 @@ permalink: /search/
 	SimpleJekyllSearch({
 	    searchInput: document.getElementById('search-input'),
 	    resultsContainer: document.getElementById('results-container'),
-	    json: '{{ site.url }}/search.json',
+	    json: '{{ site.url }}{{ site.baseurl }}search.json',
 	    searchResultTemplate: '<ul><li><span class="post-meta">{date}</span><h2><span class="post-link"><a href="{url}">{title}</a></h2><p>{desc}</p>',
 	    noResultsText: 'No results found',
 	    limit: 10,
