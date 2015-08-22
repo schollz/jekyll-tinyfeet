@@ -24,7 +24,8 @@ print 'I owe the grocer $%.2f' % grocery_bill
 Cras id pretium elit. Nam fringilla elementum sagittis. Integer sed ultrices eros, et pretium orci. Donec facilisis mi id ipsum sodales, et ultricies ante imperdiet. Nam eget luctus lectus. Duis non gravida sapien. Duis vel varius est. Proin gravida ligula lacus, nec semper lacus mattis id.
 
 <figure>
-<img src='../assets/images/knives.jpg'></img
+<img src='../assets/images/knives.jpg' alt='some text'></img>
+More te
 </figure>
 
 Donec auctor, nisl sed sodales dignissim, mi turpis maximus nibh, dapibus semper felis orci eu mi. Ut vestibulum varius lorem ut tincidunt. Nulla tempor gravida vehicula. Pellentesque pulvinar lorem cursus ex dignissim semper. Phasellus ipsum enim, viverra nec scelerisque sit amet, congue ac turpis. Phasellus non mauris et massa ultricies pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu velit ut libero finibus ornare. Sed at condimentum mi, vel ullamcorper felis. Ut tempus nisl vel purus sodales efficitur. Maecenas tincidunt scelerisque ipsum in tempus. In imperdiet, quam finibus gravida vulputate, nisl mi dignissim magna, id feugiat eros dolor eget leo. Morbi accumsan ullamcorper molestie. Nunc placerat lacinia ipsum, sagittis congue dolor dignissim sed. Nulla at metus interdum, fringilla nisi eget, finibus felis. Pellentesque in justo quis massa gravida egestas non sed lacus.
