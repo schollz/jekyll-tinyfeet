@@ -1,18 +1,9 @@
-/**
- * Reset some basic elements
- */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-
-
-
-/**
- * Basic styling
- */
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -22,48 +13,23 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
-
-
-/**
- * Images
- */
 img {
     width: 100%;
     vertical-align: middle;
 }
-
-
-
-/**
- * Figures
- */
 figure > img {
     display: block;
     margin: 0 auto;
 }
-
 figcaption {
     font-size: $small-font-size;
 }
-
-
-
-/**
- * Lists
- */
 ul, ol {
     margin-left: $spacing-unit;
 }
@@ -74,21 +40,9 @@ li {
          margin-bottom: 0;
     }
 }
-
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
-
-
-/**
- * Links
- */
 a {
     color: $brand-color;
     text-decoration: none;
@@ -102,12 +56,6 @@ a {
         text-decoration: underline;
     }
 }
-
-
-
-/**
- * Blockquotes
- */
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -120,12 +68,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
-
-/**
- * Code formatting
- */
 pre,
 code {
     font-size: 15px;
@@ -149,11 +91,6 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -171,11 +108,6 @@ pre {
     }
 }
 
-
-
-/**
- * Clearfix
- */
 %clearfix {
 
     &:after {
@@ -185,11 +117,6 @@ pre {
     }
 }
 
-
-
-/**
- * Icons
- */
 .icon {
 
     > svg {
