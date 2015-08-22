@@ -13,7 +13,7 @@ layout: default
           <span class="post-link"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </span>
         </h2>
 		<div id="item{{ counter }}"style="display:none;">
-		<p>Content2 goes here.</p>
+		<p>{{ post.description }}</p>
 		</div>
       </li>
 	{% capture counter %}{{ counter | plus: 1 }}{% endcapture %}
