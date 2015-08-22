@@ -1,6 +1,15 @@
-# A minified webpage in Jekykll
+# Jekyll with a tiny footprint
 
 [Demo](http://rpiai.com/jekyll-minimal/)
+
+## Footprint statistics
+
+| Page        | Transfered           |
+| ------------- |:-------------:|
+| Typical page   | ~3.1 KB |
+| Main CSS + JS   | ~2.2 KB |
+| Analytics (optional)   | ~11.2 KB |
+| Disqus (optional)   | ~300 KB |
 
 ## Features
 
