@@ -11,6 +11,16 @@ description: My experience with beginning web development and how to deal with h
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lorem consectetur, gravida diam quis, bibendum ligula. Sed mollis erat eu dui scelerisque fringilla. Aenean commodo nibh nunc, ac vestibulum felis ultricies et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris eu nisi tortor. Nunc euismod elit et dui porttitor, pharetra tristique eros semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin a magna interdum, accumsan dolor sed, vulputate dolor.
 
+```python
+prices = {'apple': 0.40, 'banana': 0.50}
+my_purchase = {
+    'apple': 1,
+    'banana': 6}
+grocery_bill = sum(prices[fruit] * my_purchase[fruit]
+                   for fruit in my_purchase)
+print 'I owe the grocer $%.2f' % grocery_bill
+```
+
 Cras id pretium elit. Nam fringilla elementum sagittis. Integer sed ultrices eros, et pretium orci. Donec facilisis mi id ipsum sodales, et ultricies ante imperdiet. Nam eget luctus lectus. Duis non gravida sapien. Duis vel varius est. Proin gravida ligula lacus, nec semper lacus mattis id.
 
 ![Everything is cut out](../assets/images/knives.jpg)
