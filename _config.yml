@@ -12,5 +12,8 @@ relative_permalinks: true
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Optionals
+disqus_shortname: musicsuggestions
+
 # Build settings
 markdown: redcarpet
