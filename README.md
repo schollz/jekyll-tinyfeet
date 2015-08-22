@@ -5,7 +5,8 @@
 
 ## Features
 
-- Very small footprint (CSS+JS < 10 KB)
+- Very small footprint for landing page (CSS+JS < 10 KB uncompressed)
+- SVG Icons for fast loading (< 4 KB uncompressed)
 - Dynamic description loading on main page
 - Fixed navbar
 - SEO and Opengraph
@@ -13,7 +14,7 @@
 - Optional Disqus comments on posts
 - Optional Google analytics
 
-## Footprint statistics
+## Footprint statistics for landing page
 
 | Page        | Transfered           |
 | ------------- |:-------------:|
@@ -32,3 +33,8 @@
 - ~~Disqus comments~~
 - ~~Good SEO / Meta tags (description, tags)~~~
 
+## Acknowledgements
+
+- [Jekyll for base theme](https://github.com/jglovier/jekyll-new)
+- [christian-fei for simple-jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search)
+- [nadjetey for gist idea](https://github.com/nadjetey/wangana)

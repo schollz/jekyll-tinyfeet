@@ -11,4 +11,8 @@ description: My experience with beginning web development and how to deal with h
 
 Current load is about 8.5 kB for the CSS.
 
-![Everything is cut out](../assets/images/knives.jpg)
+<figure>
+<img src='http://{{ site.url }}{{ site.baseurl }}/assets/images/knives.jpg' alt='some text'></img>
+<figcaption>More te</figcaption>
+</figure>
+
