@@ -11,7 +11,7 @@ layout: null
 "desc": "{{ post.description }}",
 "category" : "{{ post.category }}",
 "tags"     : "{{ post.tags | join: ', ' }}",
-"url"      : "{{ post.url }}",
+"url"      : "{{ post.url | prepend: site.baseurl }}",
 "date"     : "{{ post.date | date: "%b %-d, %Y" }}",
 "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape | replace('"','') | strip }}"
 } {% unless forloop.last %},{% endunless %}
@@ -27,7 +27,7 @@ layout: null
 "desc": "{{ post.description }}",
 "category" : "{{ page.category }}",
 "tags"     : "{{ page.tags | join: ', ' }}",
-"url"      : "{{ page.url }}",
+"url"      : "{{ page.url | prepend: site.baseurl }}",
 "date"     : "{{ page.date | date: "%b %-d, %Y" }}",
 "content"  : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
 {% endif %}
