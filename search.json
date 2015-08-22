@@ -1,0 +1,37 @@
+---
+layout: null
+---
+[
+{% assign counter = 0 %}
+{% for post in site.posts %}
+{% capture counter %}{{ counter | plus: 1 }}{% endcapture %} 
+{
+"title"    : "{{ post.title | escape }}",
+"counter": "{{ counter }}",
+"desc": "{{ post.description }}",
+"category" : "{{ post.category }}",
+"tags"     : "{{ post.tags | join: ', ' }}",
+"url"      : "{{ site.baseurl }}{{ post.url }}",
+"date"     : "{{ post.date | date: "%b %-d, %Y" }}",
+"content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape | replace('"','') | strip }}"
+} {% unless forloop.last %},{% endunless %}
+
+{% endfor %}
+,
+{% for page in site.pages %}
+{% capture counter %}{{ counter | plus: 1 }}{% endcapture %}
+{
+{% if page.title == 'About' %}
+"title"    : "{{ page.title | escape }}",
+"counter": "{{ counter }}",
+"desc": "{{ post.description }}",
+"category" : "{{ page.category }}",
+"tags"     : "{{ page.tags | join: ', ' }}",
+"url"      : "{{ site.baseurl }}{{ page.url }}",
+"date"     : "{{ page.date | date: "%b %-d, %Y" }}",
+"content"  : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
+{% endif %}
+} {% unless forloop.last %},{% endunless %}
+
+{% endfor %}
+]

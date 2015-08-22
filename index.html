@@ -7,17 +7,27 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
+	{% assign counter = 0 %}
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-link"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <a href="javascript:ReverseDisplay('item{{ counter }}')"><small>(gist)</small></a></span>
         </h2>
+		<div id="item{{ counter }}"style="display:none;">
+		<p>Content2 goes here.</p>
+		</div>
       </li>
+	{% capture counter %}{{ counter | plus: 1 }}{% endcapture %}
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+
+<script type="text/javascript" language="JavaScript">
+function ReverseDisplay(d) {
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+</script>
