@@ -6,9 +6,9 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif post.description %}{{ post.description }}{% else %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endif %}">
   {% if page.tags %}
-  <meta name="keywords" content="{{ page.tags}}">
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}">
   {% elsif post.tags %}
-  <meta name="keywords" content="{{ post.tags}}">
+  <meta name="keywords" content="{{ post.tags | join: ', ' }}">
   {% endif %}
   
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
