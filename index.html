@@ -10,7 +10,7 @@ layout: default
 	{% assign counter = 0 %}
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><span style="float: right;">asdfklj</span>
         <h2>
           <span class="post-link"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <a href="javascript:ReverseDisplay('item{{ counter }}')"><small>(gist)</small></a></span>
         </h2>
