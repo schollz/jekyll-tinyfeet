@@ -41,7 +41,7 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    width: 80%;
+    width: 100%;
     vertical-align: middle;
 }
 
@@ -51,7 +51,6 @@ img {
  * Figures
  */
 figure > img {
-    width: 80%;
     display: block;
     margin: 0 auto;
 }
