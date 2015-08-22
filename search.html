@@ -4,16 +4,52 @@ title: Search
 permalink: /search/
 ---
 
-<script>
-(function() {
-var cx = '001136330136785455780:607wi0hjfa0';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-'//cse.google.com/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-<gcse:search></gcse:search>
+<style>
+.container-1{
+  vertical-align: middle;
+}
+.container-1 input#search-input{
+  height: 50px;
+  background: #DBDBDB;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 130%;
+}
+</style>
+
+<div class="home">
+<!-- Html Elements for Search -->
+<div id="search-container" class="container-1">
+	<input type="text" id="search-input" placeholder="Search...">
+</div>
+</div>
+<br><br>
+<br><br>
+<div class="home">
+	<ul id="results-container" class="post-list"></ul>
+</div>
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="{{ site.baseurl }}/assets/js/jekyll-search.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	window.onload = function() {
+	    document.getElementById("search-input").focus();
+	};
+	SimpleJekyllSearch({
+	    searchInput: document.getElementById('search-input'),
+	    resultsContainer: document.getElementById('results-container'),
+	    json: '{{ site.url }}/search.json',
+	    searchResultTemplate: '<ul><li><span class="post-meta">{date}</span><h2><span class="post-link"><a href="{url}">{title}</a></h2><p>{desc}</p>',
+	    noResultsText: 'No results found',
+	    limit: 10,
+	    fuzzy: false,
+	    exclude: ['Welcome']
+	})
+    </script>
+
