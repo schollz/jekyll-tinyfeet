@@ -13,7 +13,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Optionals
-disqus_shortname: musicsuggestions
+disqus_shortname: "musicsuggestions"
+google_analytics: "UA-2345677-6"
 
 # Build settings
 markdown: redcarpet
