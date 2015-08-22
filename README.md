@@ -30,7 +30,7 @@
 </svg>
 
 
-[Demo](http://rpiai.com/jekyll-minimal/)
+[Demo](http://rpiai.com/jekyll-tinyfeet/)
 
 
 ## Features
