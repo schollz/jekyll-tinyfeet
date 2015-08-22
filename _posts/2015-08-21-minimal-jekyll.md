@@ -3,9 +3,8 @@ layout: post
 title: A nice, minimal, blog
 date: 2015-08-21
 comments: true
-archive: false
 tags: [web development, jekyll, github]
-blog: true
+landing: true
 description: My experience with beginning web development and how to deal with high impact websites using load balancing.
 ---
 

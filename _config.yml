@@ -12,5 +12,9 @@ relative_permalinks: true
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Optionals
+disqus_shortname: #"musicsuggestions"
+google_analytics: #"UA-62222464-1"
+
 # Build settings
 markdown: redcarpet
