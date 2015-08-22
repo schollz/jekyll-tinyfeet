@@ -6,7 +6,7 @@ layout: default
 
   <ul class="post-list">
 	{% assign counter = 0 %}
-    {% for post in site.posts %}
+    {% for post in site.posts %}{% if post.landing %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><span style="float: right; padding-right: 50px;"><a href="javascript:ReverseDisplay('item{{ counter }}')"><small>(gist)</small></a></span>
         <h2>
@@ -17,7 +17,7 @@ layout: default
 		</div>
       </li>
 	{% capture counter %}{{ counter | plus: 1 }}{% endcapture %}
-    {% endfor %}
+    {% endif %}{% endfor %}
   </ul>
 
 
