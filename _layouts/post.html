@@ -14,11 +14,11 @@ layout: default
 
 </div>
 
-{% if page.comments %}
+{% if page.comments %}{% if  site.disqus_shortname  %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'musicsuggestions';
+    var disqus_shortname = '{{ site.disqus_shortname }}';
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -28,4 +28,5 @@ layout: default
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
+{% endif %}{% endif %}
+
