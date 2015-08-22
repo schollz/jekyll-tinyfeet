@@ -7,6 +7,8 @@
 - Very small footprint (CSS+JS < 10 KB)
 - Fixed navbar
 - Good SEO
+- Tag page
+- Tags underneath each post title
 
 ## Todo
 
