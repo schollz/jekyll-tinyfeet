@@ -1,20 +1,18 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/jekyll-tinyfeet/" # the subpath of your site, e.g. /blog
+title: "Science! So what, who cares!?"
+email: "sciencesowhatwhocares@gmail.com"
+description: "The simplest and fastest way to find information about the frontier of science."
+baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
-url: "rpiai.com" # name of site e.g. localhost:4000
+url: "sciencesowhatwhocares.xyz" # name of site e.g. localhost:4000
 relative_permalinks: true
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: sciencesowhat
+github_username:  sciencesowhat
 
 # Optionals
-disqus_shortname: #"musicsuggestions"
-google_analytics: #"UA-62222464-1"
+disqus_shortname: "sciencesowhat"
+google_analytics: "UA-2345677-9"
 
 # Build settings
 markdown: redcarpet
+  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
